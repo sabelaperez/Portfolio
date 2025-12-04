@@ -1,0 +1,19 @@
+{
+  "header": {
+    "home": "Inicio",
+    "projects": "Proxectos",
+    "education": "Educación",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "hello": "Ola, son Sabela Pérez",
+    "description": "Enxeñeira informática namorada do desenvolvemento de software."
+  },
+  "projects": {
+    "title": "Proxectos Destacados",
+    "viewMore": "Ver máis proxectos"
+  },
+  "footer": {
+    "rights": "Todos os dereitos reservados."
+  }
+}

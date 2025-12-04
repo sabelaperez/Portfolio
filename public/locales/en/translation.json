@@ -1,0 +1,19 @@
+{
+  "header": {
+    "home": "Home",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "hello": "Hello, I'm Sabela Pérez",
+    "description": "Computer Engineer in love with software development."
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "viewMore": "View more projects"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
