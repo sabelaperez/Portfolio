@@ -1,17 +1,62 @@
 {
   "header": {
     "home": "Home",
+    "aboutMe": "About me",
     "projects": "Projects",
-    "education": "Education",
-    "contact": "Contact"
+    "education": "Education"
   },
   "hero": {
     "hello": "Hello, I'm Sabela Pérez",
     "description": "Computer Engineer in love with software development."
   },
+  "aboutMe": {
+    "description": "I am a Computer Engineering student with an interest in software development.  I am motivated by creating solutions that provide real value and help people. You can find me at technology events discovering the latest industry trends or working in teams at hackathons.",
+    "downloadCV": "Download CV"
+  },
   "projects": {
-    "title": "Featured Projects",
-    "viewMore": "View more projects"
+    "items": {
+      "roomsy": {
+        "title": "Roomsy",
+        "desc": "Web application to manage tasks and responsibilities in shared apartments.",
+        "back": "- Learned how to develop a REST API using Spring Boot following best practices. \n- Implemented a large part of the frontend, creating a simple and intuitive interface that consumes the API.",
+        "alt": "Screenshot of the Roomsy web application"
+      },
+      "greendots": {
+        "title": "GreenDots",
+        "desc": "Mobile application to discover and evaluate sustainable businesses based on their contribution to the SDGs.",
+        "back": "- Responsible for the mobile application, including UI design and navigation. \n- Presented the project alongside my teammates at an international event (EIXE 2025).",
+        "awards": ["EIXE 2025 Finalists", "Impacthon 2025 Finalists"],
+        "alt": "Screenshots of the GreenDots mobile application"
+      },
+      "pickture": {
+        "title": "Pickture",
+        "desc": "Chrome web extension that identifies clothing items in images and displays similar alternatives.",
+        "back": "- Created and presented a functional MVP in just 36 hours with a team of three people. \n- Learned new technologies in a short time frame (browser extensions, IndexedDB, Visual Search API).",
+        "awards": ["HackUDC 2025 Winners - Inditex"],
+        "alt": "Screenshot of the Pickture extension in action"
+      },
+      "viewMore": {
+        "title": "View more projects",
+        "desc": "Explore my GitHub profile to see more projects I've worked on.",
+        "alt": "@sabelaperez GitHub profile image"
+      }
+    }
+  },
+  "education": {
+    "items": {
+      "university": {
+        "degree": "Bachelor's Degree in Computer Engineering",
+        "institution": "University of Santiago de Compostela",
+        "period": "2023 - 2027",
+        "description": "- Participation in the university tutoring program, mentoring first-year students. \n- Student representative, actively involved in academic and institutional decision-making."
+      },
+      "highschool": {
+        "degree": "Science Baccalaureate",
+        "institution": " IES Eduardo Blanco Amor",
+        "period": "2021 - 2023",
+        "description": "- Participation in the STEMbach program, developing a Python project on fractals with the University of Vigo. \n- Recognized among the Best Academic Records of Galicia and awarded the Extraordinary Baccalaureate Prize."
+      }
+    }
   },
   "footer": {
     "rights": "All rights reserved."

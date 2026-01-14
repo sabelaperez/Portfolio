@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Projects from './components/Projects';
-import Education from './components/Education';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Header from './routes/Header';
+import Hero from './routes/Hero';
+import AboutMe from './routes/AboutMe';
+import Projects from './routes/Projects';
+import Education from './routes/Education';
+import Footer from './routes/Footer';
 import './styles.css';
 
 const App: React.FC = () => {
@@ -14,9 +14,9 @@ const App: React.FC = () => {
 
       <main>
         <Hero />
+        <AboutMe />
         <Projects />
         <Education />
-        <Contact />
       </main>
 
       <Footer />

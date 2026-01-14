@@ -1,17 +1,62 @@
 {
   "header": {
     "home": "Inicio",
+    "aboutMe": "Sobre mí",
     "projects": "Proyectos",
-    "education": "Educación",
-    "contact": "Contacto"
+    "education": "Educación"
   },
   "hero": {
     "hello": "Hola, soy Sabela Pérez",
     "description": "Ingeniera informática enamorada del desarrollo de software."
   },
+  "aboutMe": {
+    "description": "Soy estudiante de Ingeniería Informática, con interés por el desarrollo de software. Me motiva crear soluciones que aporten valor real y ayuden a la gente. Puedes encontrarme en eventos tecnológicos descubriendo las novedades del sector o trabajando en equipo en cualquier hackathon.",
+    "downloadCV": "Descargar CV"
+  },
   "projects": {
-    "title": "Proyectos Destacados",
-    "viewMore": "Ver más proyectos"
+    "items": {
+      "roomsy": {
+        "title": "Roomsy",
+        "desc": "Aplicación web para gestionar todas las tareas de un piso compartido.",
+        "back": "- Aprendí a usar SpringBoot para hacer una API REST siguiendo las mejores prácticas. \n- Me encargué de gran parte del front-end, creando una interfaz sencilla e intuitiva que consumiera la API.",
+        "alt": "Captura de pantalla de la aplicación web Roomsy"
+      },
+      "greendots": {
+        "title": "GreenDots",
+        "desc": "Aplicación móvil para descubrir y evaluar negocios sostenibles según su contribución a los ODS.",
+        "back": "- Gestioné toda la parte móvil, incluyendo las interfaces de usuario y la navegación. \n- Presenté junto a mis compañeros nuestro proyecto en un evento internacional (EIXE 2025).",
+        "awards": ["Finalistas EIXE 2025", "Finalistas Impacthon 2025"],
+        "alt": "Capturas de pantalla de la aplicación móvil GreenDots"
+      },
+      "pickture": {
+        "title": "Pickture",
+        "desc": "Extensión web de Chrome para identificar prendas de ropa en imágenes y mostrar opciones similares.",
+        "back": "- Creamos y presentamos un MVP funcional en apenas 36 horas con un equipo de 3 personas. \n- Aprendí tecnologías nuevas para mí (extensión web, IndexedDB, VSIT API) en tiempo récord",
+        "awards": ["Ganadores HackUDC 2025 - Inditex"],
+        "alt": "Captura de pantalla de la extensión Pickture en acción"
+      },
+      "viewMore": {
+        "title": "Ver más proyectos",
+        "desc": "Explora mi perfil de GitHub para ver más proyectos en los que he trabajado.",
+        "alt": "Imagen del perfil de GitHub de @sabelaperez"
+      }
+    }
+  },
+  "education": {
+    "items": {
+      "university": {
+        "degree": "Grado en Ingeniería Informática",
+        "institution": "Universidad de Santiago de Compostela",
+        "period": "2023 - 2027",
+        "description": "- Participé en el programa de tutores de la universidad, orientando a estudiantes de nuevo ingreso. \n- Soy representante del estudiantado, participando activamente en decisiones académicas y del centro."
+      },
+      "highschool": {
+        "degree": "Bachillerato de Ciencias",
+        "institution": " IES Eduardo Blanco Amor",
+        "period": "2021 - 2023",
+        "description": "- Participé en el STEMbach, desarrollando un proyecto sobre fractales en Python en colaboración con la UVigo. \n- Fui reconocida entre los Mejores Expedientes de Galicia (2023) y galardonada con el Premio Extraordinario de Bachillerato."
+      }
+    }
   },
   "footer": {
     "rights": "Todos los derechos reservados."
