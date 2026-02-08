@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           position: static;
           bottom: 0;
           width: 100%;
-          height: 6dvh;
+          height: 10dvh;
         }
 
         .footer p {

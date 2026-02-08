@@ -157,6 +157,10 @@ const Projects: React.FC = () => {
       </div>
 
       <style>{`
+        #projects {
+          padding: 0dvh 20dvh 15dvh;
+        }
+
         .gallery-container {
           position: relative;
           display: flex;

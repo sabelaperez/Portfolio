@@ -32,7 +32,7 @@ const AboutMe: React.FC = () => {
           flex-direction: column;
         }
         #about-me p {
-          font-size: 1.2rem;
+          font-size: 1rem;
           margin-bottom: 2rem;
           max-width: 100ch;
         }

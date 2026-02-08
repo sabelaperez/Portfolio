@@ -138,8 +138,7 @@ const Card: React.FC<ProjectCardProps> = ({
           color: var(--award-text);
           padding: 0.2rem 0.5rem;
           border-radius: 999px;
-          font-size: 0.75rem;
-          font-weight: 400;
+          font-size: 0.7rem;
           border: 1px solid var(--award-border);
           text-decoration: none;
           display: inline-block;
@@ -195,7 +194,7 @@ const Card: React.FC<ProjectCardProps> = ({
           background: var(--tech-badge-bg);
           padding: 0.25rem 0.5rem;
           border-radius: 999px;
-          font-size: 0.8rem;
+          font-size: 0.7rem;
           transition: background-color 0.3s ease;
         }
         .card-actions {
@@ -205,7 +204,7 @@ const Card: React.FC<ProjectCardProps> = ({
         }
         .card-extra {
           color: var(--text-tertiary);
-          font-size: 0.95rem;
+          font-size: 0.8rem;
           white-space: pre-line;
         }
         @media (max-width: 720px) {
