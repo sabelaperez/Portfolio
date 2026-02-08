@@ -239,6 +239,9 @@ const Projects: React.FC = () => {
         }
 
         @media (max-width: 900px) {
+          #projects {
+            padding: 10dvh 5dvh;
+          }
           .projects-gallery {
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
