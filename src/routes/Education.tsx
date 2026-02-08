@@ -5,7 +5,7 @@ import Slot from '../components/Slot';
 const Education: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section id="education" className="section">
+    <section id="education" className="section" aria-label='Education section'>
       <h2>{t('header.education')}</h2>
       <div className="education-list">
         <Slot

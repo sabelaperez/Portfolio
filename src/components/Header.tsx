@@ -35,39 +35,40 @@ const Header: React.FC = () => {
 
   return (
     <header className="header">
-      <nav className="nav" aria-label="main navigation">
-        <div className="nav-left">
-          <a href="#hero">Sabela Pérez</a>
+      <nav className="nav" aria-label="Main navigation">
+        <div className="nav-left" role="navigation">
+          <a href="#hero" aria-label="Go to home">Sabela Pérez</a>
         </div>
         <div className="nav-center" role="navigation">
-          <a href="#about-me">{t('header.aboutMe')}</a>
-          <a href="#projects">{t('header.projects')}</a>
-          <a href="#education">{t('header.education')}</a>
+          <a href="#about-me" aria-label="Go to about me">{t('header.aboutMe')}</a>
+          <a href="#projects" aria-label="Go to projects">{t('header.projects')}</a>
+          <a href="#education" aria-label="Go to education">{t('header.education')}</a>
         </div>
-        <div className="nav-right">
-          <button type="button" onClick={toggleTheme} aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`} title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}>
+        <div className="nav-right" role="region" aria-label="Settings">
+          <button type="button" onClick={toggleTheme} aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`} aria-pressed={theme === 'dark'} title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}>
             {theme === 'light' ? '🌙' : '☀️'}
           </button>
-          <select 
-            value={i18n.language} 
-            onChange={cambiarIdioma}
-            aria-label="Select language"
-            className="language-select"
-          >
-            <option value="en">EN</option>
-            <option value="es">ES</option>
-            <option value="gl">GL</option>
-          </select>
+          <div className="sel-language" role="region" aria-label="Language selection">
+            <select 
+              value={i18n.language} 
+              onChange={cambiarIdioma}
+              aria-label="Select language"
+              className="language-select"
+            >
+              <option value="en">EN</option>
+              <option value="es">ES</option>
+              <option value="gl">GL</option>
+            </select>
+          </div>
         </div>
       </nav>
 
       <style>{`
         .header {
           background: var(--header-bg);
-          color: var(--text-primary);
+          color: var(--text-secondary);
           backdrop-filter: blur(8px) saturate(120%);
           -webkit-backdrop-filter: blur(8px) saturate(120%);
-          border-bottom: 1px solid var(--header-border);
           box-shadow: var(--shadow-md);
           min-height: 4rem;
           min-width: 100%;
@@ -93,16 +94,14 @@ const Header: React.FC = () => {
           color: white;
           text-decoration: none;
         }
-
         .nav-left a {
           color: var(--text-secondary);
           text-decoration: none;
           padding: 0.5rem;
           transition: color 0.2s ease;
         }
-
         .nav-left a:hover {
-          color: var(--text-primary);
+          color: var(--accent-primary-text);
         }
 
         .nav-center {
@@ -111,16 +110,14 @@ const Header: React.FC = () => {
           margin: 0 auto;
           align-items: center;
         }
-
         .nav-center a {
           color: var(--text-secondary);
           text-decoration: none;
           padding: 0.5rem;
           transition: color 0.2s ease;
         }
-
         .nav-center a:hover {
-          color: var(--text-primary);
+          color: var(--accent-primary-text);
         }
 
         .nav-right {
@@ -128,18 +125,17 @@ const Header: React.FC = () => {
           gap: 0.5rem;
           flex: 0 0 auto;
         }
-
         .nav-right button {
           background: transparent;
           color: var(--text-secondary);
           border: 0px;
+          width: 44px;
           padding: 0.25rem 0.5rem;
           border-radius: 4px;
           cursor: pointer;
           font-family: serif;
           transition: color 0.2s ease, background-color 0.2s ease;
         }
-
         .nav-right button:hover {
           color: var(--text-primary);
           background: var(--overlay-hover);
@@ -148,6 +144,7 @@ const Header: React.FC = () => {
         .language-select {
           background: transparent;
           color: var(--text-secondary);
+          width: 60px;
           border: 1px solid var(--border-color);
           padding: 0.25rem 0.5rem;
           border-radius: 4px;
@@ -163,17 +160,15 @@ const Header: React.FC = () => {
           background: var(--overlay-hover);
           border-color: var(--border-hover);
         }
-
         .language-select:focus {
           border-color: var(--accent-primary);
         }
-
         .language-select option {
           background: var(--bg-primary);
           color: var(--text-primary);
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
           .nav-center { gap: 0.5rem; }
           .nav-center a { display: none; }
           .header { height: 56px; }

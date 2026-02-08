@@ -7,11 +7,14 @@
   },
   "hero": {
     "hello": "Ola, son Sabela Pérez",
-    "description": "Enxeñeira informática namorada do desenvolvemento de software."
+    "description": "Enxeñeira informática enfocada no desenvolvemento de software.",
+    "downloadCV": "Descargar CV"
   },
   "aboutMe": {
-    "description": "Son estudante de Enxeñería Informática, con interese polo desenvolvemento de software. Motívame crear solucións que acheguen valor real e axuden á xente. Podes atoparme en eventos tecnolóxicos descubrindo as novidades do sector ou traballando en equipo en calquera hackathon.",
-    "downloadCV": "Descargar CV"
+    "description1": "Son estudante de enxeñaría informática, centrada no desenvolvemento de software. A miña principal motivación é axudar a través da tecnoloxía, polo que me encantaría participar en proxectos do sector da saúde, da educación ou calquera outro que busque mellorar a vida das persoas.",
+    "description2": "Son moi curiosa e inqueda; sempre que podo participo en concursos, eventos e hackatóns coñecendo xente, aprendendo e traballando en equipo. Paréceme unha das mellores formas de complementar a miña formación e, ademais, é algo que me encanta.",
+    "description3": "Teño traballado con diversas tecnoloxías, dende desenvolvemento móbil con Kotlin ou React Native ata programación con C. Aprendo rápido, pero actualmente a linguaxe coa que máis cómoda me sinto é Java, a cal adoito combinar con SpringBoot e React.",
+    "description4": "Aínda que estou a iniciarme no sector, creo que o meu compromiso e as miñas gañas de medrar como desenvolvedora permítenme achegar valor a calquera proxecto e seguir construíndo solucións a través da tecnoloxía."
   },
   "projects": {
     "items": {
@@ -37,7 +40,7 @@
       },
       "viewMore": {
         "title": "Ver máis proxectos",
-        "desc": "Explora o meu perfil de GitHub para ver máis proxectos nos que teño traballado.",
+        "desc": "Explora o meu perfil de GitHub para ver máis proxectos nos que teño traballado ou outros que están en proceso.",
         "alt": "Imaxe do perfil de GitHub de @sabelaperez"
       }
     }

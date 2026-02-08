@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-height: 64px; 
+  --scroll-offset: calc(var(--header-height) + 1.5rem);
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overscroll-behavior-y: contain;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Otras secciones */
+.section {
+  min-height: 100dvh;
+  padding: 0dvh 20dvh;
+  scroll-margin-top: var(--scroll-offset);
+}
+
+.section h1 {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.section h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Componentes comunes */
+.btn {
+  align-self: flex-end;
+  text-decoration: none;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: transparent;
+  color: inherit;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.btn:hover {
+  background: var(--overlay-hover);
+}
+
+/* Mejora de legibilidad */
+p, li, a, button {
+  line-height: 1.5;
+}
+
+/* Tamaño mínimo para elementos interactivos (WCAG 2.5.5) */
+input, select {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+@media (min-width: 769px) and (max-width: 1130px) {
+  .section { padding: 10dvh 10dvh; }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 10dvh 5dvh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

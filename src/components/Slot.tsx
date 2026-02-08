@@ -39,7 +39,6 @@ const Slot: React.FC<SlotProps> = ({
           display: flex;
           gap: 1.5rem;
           align-items: flex-start;
-          background: var(--bg-tertiary);
           border: 1px solid var(--border-color);
           border-radius: 12px;
           padding: 1.5rem;
@@ -56,7 +55,6 @@ const Slot: React.FC<SlotProps> = ({
           height: 80px;
           overflow: hidden;
           border-radius: 8px;
-          background: linear-gradient(135deg, var(--card-gradient-start), var(--card-gradient-end));
           display: flex;
           align-items: center;
           justify-content: center;
@@ -66,7 +64,6 @@ const Slot: React.FC<SlotProps> = ({
           height: 100%;
           object-fit: contain;
           display: block;
-          padding: 0.5rem;
         }
         .slot-content {
           flex: 1 1 auto;

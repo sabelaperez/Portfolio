@@ -6,12 +6,15 @@
     "education": "Education"
   },
   "hero": {
-    "hello": "Hello, I'm Sabela Pérez",
-    "description": "Computer Engineer in love with software development."
+    "hello": "Hi, I'm Sabela Pérez",
+    "description": "Computer Engineer focused on software development.",
+    "downloadCV": "Download CV"
   },
   "aboutMe": {
-    "description": "I am a Computer Engineering student with an interest in software development.  I am motivated by creating solutions that provide real value and help people. You can find me at technology events discovering the latest industry trends or working in teams at hackathons.",
-    "downloadCV": "Download CV"
+    "description1": "I am a Computer Engineering student focused on software development. My main motivation is to help through technology, and I would love to take part in projects in the healthcare, education, or any other sector aimed at improving people’s lives.",
+    "description2": "I am a very curious and proactive person; whenever I can, I take part in contests, events, and hackathons, where I meet new people, learn, and work in teams. I believe this is one of the best ways to complement my education, and it is something I truly enjoy.",
+    "description3": "I have worked with a variety of technologies, from mobile development with Kotlin and React Native to programming in C. I learn quickly, and currently the language I feel most comfortable with is Java, which I usually combine with Spring Boot and React.",
+    "description4": "Although I am at the beginning of my professional career, I believe my commitment and eagerness to grow as a developer allow me to contribute value to any project and continue building meaningful solutions through technology."
   },
   "projects": {
     "items": {
@@ -37,7 +40,7 @@
       },
       "viewMore": {
         "title": "View more projects",
-        "desc": "Explore my GitHub profile to see more projects I've worked on.",
+        "desc": "Explore my GitHub profile to see more projects I've worked on or others that are in progress.",
         "alt": "@sabelaperez GitHub profile image"
       }
     }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Card from '../components/Card';
 import i18n from '../i18n/i18n';
+
 import roomsy from '../assets/roomsy.png';
 import greendots from '../assets/greendots.jpg';
 import picture from '../assets/picture.png';
@@ -15,7 +16,13 @@ const Projects: React.FC = () => {
   // Detectar tamaño de pantalla y ajustar items por página
   React.useEffect(() => {
     const handleResize = () => {
-      setItemsPerPage(window.innerWidth < 768 ? 1 : 2);
+      if (window.innerWidth < 1130) {
+        setItemsPerPage(1);
+      } else if (window.innerWidth > 1610) {
+        setItemsPerPage(3);
+      } else {
+        setItemsPerPage(2);
+      }
     };
     
     handleResize(); // Initial check
@@ -37,6 +44,7 @@ const Projects: React.FC = () => {
     {
       title: t('projects.items.greendots.title'),
       awards: t('projects.items.greendots.awards', { returnObjects: true }) as string[],
+      awardsUrls: ['https://eije2025.iscac.pt/', 'https://gdg.community.dev/events/details/google-gdg-santiago-de-compostela-presents-impact-thon-etse-usc/'],
       description: t('projects.items.greendots.desc'),
       backText: t('projects.items.greendots.back'),
       technologies: ['Kotlin', 'Java', 'Spring Boot', 'PostgreSQL', 'Docker'],
@@ -47,6 +55,7 @@ const Projects: React.FC = () => {
     {
       title: t('projects.items.pickture.title'),
       awards: t('projects.items.pickture.awards', { returnObjects: true }) as string[],
+      awardsUrls: ['https://hackudc2025.devpost.com/project-gallery'],
       description: t('projects.items.pickture.desc'),
       backText: t('projects.items.pickture.back'),
       technologies: ['JavaScript', 'HTML', 'CSS', 'IndexedDB', 'Visual Search Inditex API'],
@@ -57,9 +66,11 @@ const Projects: React.FC = () => {
     {
       title: t('projects.items.viewMore.title'),
       description: t('projects.items.viewMore.desc'),
-      repoUrl: "https://github.com/sabelaperez",
+      backText: "",
+      technologies: ['Java', 'JavaScript', 'JavaFX', 'JavaRMI', 'C', 'C++', 'OpenGL', 'TypeScript'],
       imageSrc: viewMore,
       imageAlt: t('projects.items.viewMore.alt'),
+      repoUrl: "https://github.com/sabelaperez",
     },
   ];
 
@@ -74,17 +85,15 @@ const Projects: React.FC = () => {
   const nextProject = () => {
     setCurrentIndex((prev) => (prev + 1) % totalPages);
   };
-
   const prevProject = () => {
     setCurrentIndex((prev) => (prev - 1 + totalPages) % totalPages);
   };
-
   const goToProject = (index: number) => {
     setCurrentIndex(index);
   };
 
   return (
-    <section id="projects" className="section">
+    <section id="projects" className="section" aria-label="Projects section">
       <h2>{t('header.projects')}</h2>
       
       <div className="gallery-container">
@@ -103,7 +112,9 @@ const Projects: React.FC = () => {
           >
             {pages.map((page, pageIndex) => (
               <div key={pageIndex} className="project-slide">
-                <div className="projects-grid">
+                <div className="projects-grid" style={{ 
+                  gridTemplateColumns: `repeat(${itemsPerPage}, 1fr)` 
+                }}>
                     {page.map((project, idx) => (
                       <Card
                         key={idx}
@@ -115,6 +126,7 @@ const Projects: React.FC = () => {
                         imageAlt={project.imageAlt}
                         repoUrl={project.repoUrl}
                         awards={project.awards}
+                        awardsUrls={project.awardsUrls}
                         locale={i18n.language}
                       />
                     ))}
@@ -151,82 +163,26 @@ const Projects: React.FC = () => {
           align-items: center;
           gap: 1rem;
           width: 100%;
-          max-width: 1200px;
           margin: 0 auto;
         }
-
         .projects-gallery {
           flex: 1;
           overflow: hidden;
           border-radius: 12px;
         }
-
         .projects-track {
           display: flex;
           transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
         .project-slide {
           min-width: 100%;
           display: flex;
           justify-content: center;
-          padding: 0 1rem;
         }
-
         .projects-grid {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
           gap: 1.5rem;
           width: 100%;
-          max-width: 1200px;
-        }
-
-        .more-projects-card {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 1.5rem;
-          background: var(--bg-tertiary);
-          border: 2px dashed var(--border-color);
-          border-radius: 12px;
-          padding: 4rem 2rem;
-          min-height: 300px;
-          width: 100%;
-          max-width: 600px;
-          text-align: center;
-          transition: all 0.3s ease;
-        }
-
-        .more-projects-card:hover {
-          border-color: var(--accent-primary);
-          background: var(--overlay-hover);
-        }
-
-        .more-projects-card h3 {
-          font-size: 1.5rem;
-          margin: 0;
-          color: var(--text-primary);
-        }
-
-        .more-projects-card p {
-          font-size: 1.1rem;
-          margin: 0;
-          color: var(--text-secondary);
-        }
-
-        .more-projects-card .btn {
-          margin-top: 1rem;
-        }
-
-        .btn-primary {
-          background: var(--accent-primary);
-          color: var(--accent-primary-text);
-          border: none;
-        }
-
-        .btn-primary:hover {
-          opacity: 0.9;
         }
 
         .gallery-btn {
@@ -245,23 +201,19 @@ const Projects: React.FC = () => {
           flex-shrink: 0;
           backdrop-filter: blur(8px);
         }
-
         .gallery-btn:hover {
           background: var(--overlay-hover);
           border-color: var(--border-hover);
         }
-
         .gallery-btn:active {
           transform: scale(0.95);
         }
-
         .gallery-indicators {
           display: flex;
           justify-content: center;
           gap: 0.75rem;
           margin-top: 2rem;
         }
-
         .indicator {
           width: 10px;
           height: 10px;
@@ -272,75 +224,32 @@ const Projects: React.FC = () => {
           transition: all 0.3s ease;
           padding: 0;
         }
-
         .indicator:hover {
           border-color: var(--border-hover);
           transform: scale(1.2);
         }
-
         .indicator.active {
-          background: var(--accent-primary);
-          border-color: var(--accent-primary);
+          background: var(--border-color);
           width: 32px;
           border-radius: 5px;
         }
 
-        .more {
-          display: flex;
-          justify-content: center;
-          margin-top: 2rem;
-        }
-
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
           .projects-gallery {
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
             scroll-snap-type: x mandatory;
           }
-
-          .gallery-indicators {
-            display: none;
-          }
-
-          .projects-track {
-            display: flex;
-            gap: 0;
+          .indicator.active {
+            width: 10px;
+            border-radius: 50%;
+            background: transparent;
           }
           .project-slide {
-            min-width: 100%;
             scroll-snap-align: center;
-            padding: 0 0.5rem;
-            box-sizing: border-box;
           }
-
-          .projects-grid {
-            grid-template-columns: 1fr;
-            gap: 1rem;
-          }
-
           .gallery-btn {
             display: none;
-          }
-
-          .gallery-container {
-            gap: 0.5rem;
-          }
-
-          .project-slide {
-            padding: 0 0.5rem;
-          }
-
-          .more-projects-card {
-            padding: 3rem 1.5rem;
-            min-height: 250px;
-          }
-
-          .more-projects-card h3 {
-            font-size: 1.25rem;
-          }
-
-          .more-projects-card p {
-            font-size: 1rem;
           }
         }
       `}</style>
