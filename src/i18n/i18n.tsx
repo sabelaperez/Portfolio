@@ -21,4 +21,21 @@ i18n
     debug: false,  // puedes activar para ver logs durante el desarrollo
   });
 
+i18n.on('languageChanged', (lng: string) => {
+  if (!lng) return;
+  document.documentElement.lang = lng;
+
+  // Actualiza meta tags según idioma
+  const langMap: Record<string, string> = {
+    es: 'es_ES',
+    en: 'en_US',
+    gl: 'gl_ES',
+  };
+
+  const ogLocale = document.querySelector('meta[property="og:locale"]');
+  if (ogLocale) {
+    ogLocale.setAttribute('content', langMap[lng] || 'es_ES');
+  }
+});
+
 export default i18n;

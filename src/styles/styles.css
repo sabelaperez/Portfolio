@@ -82,6 +82,20 @@ input, select {
   min-width: 44px;
 }
 
+span {
+  vertical-align: bottom;
+  padding-right: 0.2rem;
+}
+
+.material-symbols-outlined {
+  font-size: 24px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 20;
+}
+
 @media (min-width: 769px) and (max-width: 1130px) {
   .section { padding: 10dvh 10dvh; }
 }

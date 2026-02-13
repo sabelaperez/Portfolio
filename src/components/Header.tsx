@@ -46,7 +46,7 @@ const Header: React.FC = () => {
         </div>
         <div className="nav-right" role="region" aria-label="Settings">
           <button type="button" onClick={toggleTheme} aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`} aria-pressed={theme === 'dark'} title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}>
-            {theme === 'light' ? '🌙' : '☀️'}
+            {theme === 'light' ? <span className="material-symbols-outlined">dark_mode</span> : <span className="material-symbols-outlined">light_mode</span>}
           </button>
           <div className="sel-language" role="region" aria-label="Language selection">
             <select 
