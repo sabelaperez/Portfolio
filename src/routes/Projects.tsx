@@ -6,6 +6,7 @@ import i18n from '../i18n/i18n';
 import roomsy from '../assets/roomsy.png';
 import greendots from '../assets/greendots.jpg';
 import picture from '../assets/picture.png';
+import lockedin from '../assets/lockedin.jpeg';
 import viewMore from '../assets/github.png';
 
 const Projects: React.FC = () => {
@@ -32,14 +33,25 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
+      title: t('projects.items.lockedin.title'),
+      awards: t('projects.items.lockedin.awards', { returnObjects: true }) as string[],
+      awardsUrls: ['https://hackudc-2026.devpost.com/'],
+      description: t('projects.items.lockedin.desc'),
+      backText: t('projects.items.lockedin.back'),
+      technologies: ['Kotlin', 'Jetpack Compose', 'FastAPI', 'Python', 'Docker', 'Cryptography'],
+      imageSrc: lockedin,
+      imageAlt: t('projects.items.lockedin.alt'),
+      repoUrl: "https://github.com/Casiopobre/LockedIn",
+    },
+    {
       title: t('projects.items.roomsy.title'),
+      awards: t('projects.items.roomsy.awards', { returnObjects: true }) as string[],
       description: t('projects.items.roomsy.desc'),
       backText: t('projects.items.roomsy.back'),
       technologies: ['Java', 'Spring Boot', 'Docker', 'React', 'Tailwind CSS'],
       imageSrc: roomsy,
       imageAlt: t('projects.items.roomsy.alt'),
       repoUrl: "https://github.com/sabelaperez/Roomsy",
-      awards: undefined,
     },
     {
       title: t('projects.items.greendots.title'),

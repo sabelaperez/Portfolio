@@ -22,6 +22,7 @@
         "title": "Roomsy",
         "desc": "Aplicación web para gestionar todas las tareas de un piso compartido.",
         "back": "- Aprendí a usar SpringBoot para hacer una API REST siguiendo las mejores prácticas. \n- Me encargué de gran parte del front-end, creando una interfaz sencilla e intuitiva que consumiera la API.",
+        "awarded": "Proyecto universitario",
         "alt": "Captura de pantalla de la aplicación web Roomsy"
       },
       "greendots": {
@@ -37,6 +38,13 @@
         "back": "- Creamos y presentamos un MVP funcional en apenas 36 horas con un equipo de 3 personas. \n- Aprendí tecnologías nuevas para mí (extensión web, IndexedDB, VSIT API) en tiempo récord",
         "awards": ["Ganadores HackUDC 2025 - Inditex"],
         "alt": "Captura de pantalla de la extensión Pickture en acción"
+      },
+      "lockedin": {
+        "title": "LockedIn",
+        "desc": "Aplicación móvil para gestionar tus contraseñas en local o compartilas con tus contactos de forma totalmente segura.",
+        "back": "- Creamos y presentamos un MVP funcional y seguro en apenas 36h con un equipo de 4 personas. \n- Desarrollé una app funcional e intuitiva en tiempo récord.",
+        "awards": ["HackUDC 2026 - Gradiant"],
+        "alt": "Captura de pantalla de la aplicación LockedIn en acción"
       },
       "viewMore": {
         "title": "Ver más proyectos",

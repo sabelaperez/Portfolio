@@ -22,6 +22,7 @@
         "title": "Roomsy",
         "desc": "Web application to manage tasks and responsibilities in shared apartments.",
         "back": "- Learned how to develop a REST API using Spring Boot following best practices. \n- Implemented a large part of the frontend, creating a simple and intuitive interface that consumes the API.",
+        "awards": ["University project"],
         "alt": "Screenshot of the Roomsy web application"
       },
       "greendots": {
@@ -37,6 +38,13 @@
         "back": "- Created and presented a functional MVP in just 36 hours with a team of three people. \n- Learned new technologies in a short time frame (browser extensions, IndexedDB, Visual Search API).",
         "awards": ["HackUDC 2025 Winners - Inditex"],
         "alt": "Screenshot of the Pickture extension in action"
+      },
+      "lockedin": {
+        "title": "LockedIn",
+        "desc": "Mobile app to manage your passwords locally or share them securely with your contacts.",
+        "back": "- Created and presented a functional and secure MVP in just 36h with a team of four people. \n- Developed a functional and intuitive app in record time.",
+        "awards": ["HackUDC 2026 - Gradiant"],
+        "alt": "Screenshot of the LockedIn app in action"
       },
       "viewMore": {
         "title": "View more projects",
