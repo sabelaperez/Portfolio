@@ -7,6 +7,7 @@ import roomsy from '../assets/roomsy.png';
 import greendots from '../assets/greendots.jpg';
 import picture from '../assets/picture.png';
 import lockedin from '../assets/lockedin.jpeg';
+import gist from '../assets/gist.png'
 import viewMore from '../assets/github.png';
 
 const Projects: React.FC = () => {
@@ -32,6 +33,17 @@ const Projects: React.FC = () => {
   }, []);
 
   const projects = [
+    {
+      title: t('projects.items.gist.title'),
+      awards: t('projects.items.gist.awards', { returnObjects: true }) as string[],
+      awardsUrls: ['https://devpost.com/software/gist-24ml8r'],
+      description: t('projects.items.gist.desc'),
+      backText: t('projects.items.gist.back'),
+      technologies: ['Kotlin', 'JetBrains SDK', 'Slack API', 'OpenAI API', 'Git4Idea'],
+      imageSrc: gist,
+      imageAlt: t('projects.items.gist.alt'),
+      repoUrl: "https://github.com/sabelaperez/Gist",
+    },
     {
       title: t('projects.items.lockedin.title'),
       awards: t('projects.items.lockedin.awards', { returnObjects: true }) as string[],

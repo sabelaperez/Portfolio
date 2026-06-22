@@ -46,6 +46,13 @@
         "awards": ["HackUDC 2026 - Gradiant"],
         "alt": "Captura de pantalla da aplicación LockedIn en acción"
       },
+      "gist": {
+        "title": "Gist",
+        "desc": "Plugin de JetBrains para reducir o custo dos cambios de contexto: xestiona dinamicamente mensaxes de Slack segundo a actividade en tempo real no IDE e xera resumos de commits para actualizarse ao momento.",
+        "back": "-  Plugin en Kotlin desenvolto en 36 horas, integrando a API de Slack, Git4Idea e OpenAI.",
+        "awards": ["HackUP 2026 - JetBrains / Bending Spoons"],
+        "alt": "Captura de pantalla do plugin Gist en acción"
+      },
       "viewMore": {
         "title": "Ver máis proxectos",
         "desc": "Explora o meu perfil de GitHub para ver máis proxectos nos que teño traballado ou outros que están en proceso.",
@@ -59,7 +66,7 @@
         "degree": "Grao en Enxeñaría Informática",
         "institution": "Universidade de Santiago de Compostela",
         "period": "2023 - 2027",
-        "description": "- Participei no programa de titores da universidade, orientando a estudantes de novo ingreso. \n- Son representante do estudantado, participando activamente en decisións académicas e do centro."
+        "description": "- Participei no programa de titores da universidade, orientando a estudantes de novo ingreso. \n- Son tesoureira da representación do estudantado, participando activamente en decisións académicas e do centro. \n- Organicei a primeira competición Capture The Flag (CTF) da historia da miña universidade."
       },
       "highschool": {
         "degree": "Bacharelato en Ciencias e Tecnoloxía",

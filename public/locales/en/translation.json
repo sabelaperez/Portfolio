@@ -46,6 +46,13 @@
         "awards": ["HackUDC 2026 - Gradiant"],
         "alt": "Screenshot of the LockedIn app in action"
       },
+      "gist": {
+        "title": "Gist",
+        "desc": "JetBrains plugin to reduce developer context-switching cost: dynamically manages Slack messages based on real-time coding activity and generates AI-powered commit summaries to help developers catch up instantly.",
+        "back": "- Built a Kotlin plugin in 36 hours, integrating Slack API, Git4Idea and OpenAI.",
+        "awards": ["HackUP 2026 - JetBrains / Bending Spoons"],
+        "alt": "Screenshot of the Gist plugin in action"
+      },
       "viewMore": {
         "title": "View more projects",
         "desc": "Explore my GitHub profile to see more projects I've worked on or others that are in progress.",
@@ -59,7 +66,7 @@
         "degree": "Bachelor's Degree in Computer Engineering",
         "institution": "University of Santiago de Compostela",
         "period": "2023 - 2027",
-        "description": "- Participation in the university tutoring program, mentoring first-year students. \n- Student representative, actively involved in academic and institutional decision-making."
+        "description": "- Participation in the university tutoring program, mentoring first-year students. \n- Treasurer of the Student Representation, actively involved in institutional and academic decision-making. \n- Organized the first Capture The Flag (CTF) competition in my university"
       },
       "highschool": {
         "degree": "Science Baccalaureate",

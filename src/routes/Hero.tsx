@@ -11,9 +11,9 @@ const Hero: React.FC = () => {
 
   const lang = (i18n.language || 'en').split('-')[0]; 
   const available: Record<string,string> = {
-    en: '/cv/cv_en.pdf',
-    es: '/cv/cv_es.pdf',
-    gl: '/cv/cv_es.pdf',
+    en: '/cv/SabelaPerez_CV_en.pdf',
+    es: '/cv/SabelaPerez_CV.pdf',
+    gl: '/cv/SabelaPerez_CV.pdf',
   };
   const cvPath = available[lang] ?? available.en;
 
